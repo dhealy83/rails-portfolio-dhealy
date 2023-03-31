@@ -1,0 +1,12 @@
+<h1 class="text-light">New home page</h1>
+
+<div class="text-light">
+<%= render "form", home_page: @home_page %>
+</div>
+
+<br>
+
+
+<div>
+  <%= link_to "Back to home pages", home_pages_path if current_user.admin? %>
+</div>

@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="text-light mx-2">Video chats</h1>
+
+<div id="video_chats">
+  <% @video_chats.each do |video_chat| %>
+    <%= render video_chat %>
+    <p>
+      <%= link_to "Show this video chat", video_chat %>
+    </p>
+  <% end %>
+</div>
+
+<div class="mx-2">
+<%= link_to "New video chat", new_video_chat_path %>
+</div>

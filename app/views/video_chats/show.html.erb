@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @video_chat %>
+
+<div class="mx-4 mb-2">
+  <%= link_to "Edit this video chat", edit_video_chat_path(@video_chat) %> |
+  <%= link_to "Back to video chats", video_chats_path %>
+
+  <%= button_to "Destroy this video chat", @video_chat, method: :delete %>
+</div>

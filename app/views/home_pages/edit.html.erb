@@ -1,0 +1,12 @@
+<h1 class="text-light">Editing home page</h1>
+
+<div class="text-light">
+<%= render "form", home_page: @home_page %>
+</div>
+
+<br>
+
+<div class:"nav-link">
+  <%= link_to "Show this home page", @home_page %> |
+  <%= link_to "Back to home pages", home_pages_path %>
+</div>

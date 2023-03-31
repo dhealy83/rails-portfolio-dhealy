@@ -1,0 +1,2 @@
+class VideoChat < ApplicationRecord
+end

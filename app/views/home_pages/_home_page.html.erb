@@ -1,0 +1,36 @@
+<div id="<%= dom_id home_page %>"  class:"nav-link text-light">
+
+  <div class="">
+    <% if user_signed_in? %>
+      <% if current_user.admin? %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row my-5">
+    <div class="col-sm-12 col-md-6 p-0 px-2">
+      <div class="m-2">
+        <h1>
+          <%= home_page.title  %>
+        </h1>
+      </div>
+      
+      <div class="m-2">
+        <h6>
+        <%= home_page.description %>
+        </h6>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 p-0 ">
+      <div class="images d-flex justify-content-center ">
+        <% home_page.images.each do |image| %>
+          <%= image_tag(image, style: "max-width: 95%;") %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
