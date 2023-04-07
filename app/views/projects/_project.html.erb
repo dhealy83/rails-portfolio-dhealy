@@ -1,4 +1,5 @@
 <div id="<%= dom_id project %>" class="text-light">
+
 <%= stylesheet_link_tag "projects", "data-turbo-track": "reload" %>
   
   <div class="m-2">
@@ -24,30 +25,6 @@
           <% end %>
         </div>
       </div>
-
-
-
-      <p><%= project.description.to_plain_text.truncate(200) %><span id="dots"></span>
-        <span id="more"><%= project.description.to_plain_text %></span>
-      </p>
-
-      <script>
-      function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("myBtn");
-
-        if (dots.style.display === "none") {
-          dots.style.display = "inline";
-          btnText.innerHTML = "Read more"; 
-          moreText.style.display = "none";
-        } else {
-          dots.style.display = "none";
-          btnText.innerHTML = "Read less"; 
-          moreText.style.display = "inline";
-        }
-      }
-      </script>
       
       <div class="m-2">
         <div class="row">
@@ -68,8 +45,8 @@
                 target="blank">
                 Deployed App
             </a>
-            <div class="btn btn-dark" id="">
-              <link_to onclick="myFunction()" id="myBtn" class="myBtn btn btn-dark p-0 lh-1">Read More</link_to>
+            <div class="showProjectBtn btn btn-dark text-reset">
+            <%= link_to "Show this project", project %>
             </div>
           </div>
         </div>
