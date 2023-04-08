@@ -1,19 +1,19 @@
-<h2 class="text-light mx-4">Login</h2>
+<h2 class="text-white mx-4">Login</h2>
 
 <div class="mx-4 justify-content-end">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field text-light">
+  <div class="field text-white">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field text-light">
+  <div class="field text-white">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
 
   <% if devise_mapping.rememberable? %>
-    <div class="field text-light">
+    <div class="field text-white">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>

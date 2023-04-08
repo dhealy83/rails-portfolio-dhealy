@@ -1,6 +1,8 @@
-<p style="color: green"><%= notice %></p>
+<div class="m-2">
+  <p style="color: green"><%= notice %></p>
+</div>
 
-<h1 class="text-light mx-2">Video chats</h1>
+<h1 class="text-white mx-2">Video chats</h1>
 
 <div id="video_chats">
   <% @video_chats.each do |video_chat| %>
@@ -11,6 +13,6 @@
   <% end %>
 </div>
 
-<div class="mx-2">
+<div class="mx-2" as="style">
 <%= link_to "New video chat", new_video_chat_path %>
 </div>

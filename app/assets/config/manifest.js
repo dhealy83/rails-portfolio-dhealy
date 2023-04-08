@@ -7,3 +7,5 @@
 //= link images.css
 //= link embed.css
 //= link projects.css
+//= link_tree ../../javascript .js
+//= link_tree ../../../vendor/javascript .js

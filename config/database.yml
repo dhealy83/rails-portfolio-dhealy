@@ -19,7 +19,9 @@ default: &default
 
 development:
   <<: *default
-  database: dhealy_portfolio_development
+database: <% Rails.application.credentials.DB_NAME.test_db %>
+username: <% Rails.application.credentials.DB_USER.test_db %>
+password: <% Rails.application.credentials.DB_PASSWORD.test_db %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -52,6 +54,6 @@ test:
 #
 production:
   <<: *default
-  database: dhealy_portfolio_production
-  username: dhealy_portfolio
-  password: <%= ENV["DHEALY_PORTFOLIO_DATABASE_PASSWORD"] %>
+database: <% Rails.application.credentials.DB_NAME.prod_db %>
+username: <% Rails.application.credentials.DB_USER.prod_db %>
+password: <% Rails.application.credentials.DB_PASSWORD.prod_db %>

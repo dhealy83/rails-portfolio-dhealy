@@ -1,19 +1,19 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: green" class="m-2"><%= notice %></p>
 
 <% if user_signed_in? %>
 
-  <p>
+  <p class="m-2">
     <%= link_to "New home page", new_home_page_path if current_user.admin? %>
   </p>  
 <% end %>  
 
-<div id="home_pages" class="text-light">
+<div id="home_pages" class="text-white">
   <% @home_pages.each do |home_page| %>
     <%= render home_page %>
 </div>
   
   <% if user_signed_in? %>
-    <p>
+    <p class="m-2">
       <%= link_to "Show this home page", home_page if current_user.admin? %>
     </p>
     

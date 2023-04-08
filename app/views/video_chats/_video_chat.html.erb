@@ -1,11 +1,12 @@
-<div id="<%= dom_id video_chat %>" class="text-light">
+<div id="<%= dom_id video_chat %>" class="text-white" as="style">
   <p>
     <%= video_chat.name %>
   </p>
 
 
-<div class="embedVideoContainer d-flex justify-content-center my-3">
-  <div id="otEmbedContainer" style="width:800px; height:640px" class=""></div> <script src="https://tokbox.com/embed/embed/ot-embed.js?embedId=3936e33e-303d-4bb8-ad4e-042ca6a85588&room=DEFAULT_ROOM"></script>
+  <div class="embedVideoContainer d-flex justify-content-center my-3">
+  <div id="otEmbedContainer" style="width:800px; height:640px" as="style"></div>
+  <script src="https://tokbox.com/embed/embed/ot-embed.js?embedId=3936e33e-303d-4bb8-ad4e-042ca6a85588&room=DEFAULT_ROOM">
+  </script>
 </div>
 
-</div>

@@ -1,4 +1,4 @@
-<div id="<%= dom_id project %>" class="text-light">
+<div id="<%= dom_id project %>" class="text-white">
 
 <%= stylesheet_link_tag "projects", "data-turbo-track": "reload" %>
   
@@ -19,7 +19,7 @@
       </div>
 
       <div class="col-sm-12 col-md-6 p-0 ">
-        <div class="images d-flex justify-content-center ">
+        <div class="images d-flex justify-content-center">
           <% project.images.each do |image| %>
             <%= image_tag(image, style: "width: 100%;") %>
           <% end %>
@@ -45,8 +45,8 @@
                 target="blank">
                 Deployed App
             </a>
-            <div class="showProjectBtn btn btn-dark text-reset">
-            <%= link_to "Show this project", project %>
+            <div class="btn btn-dark">
+            <%= link_to "Show This Project", project , style: "color: white; text-decoration: none; align-self: center;"%>
             </div>
           </div>
         </div>

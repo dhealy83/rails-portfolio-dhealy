@@ -2,22 +2,22 @@
 
 <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand text-light" id="navTitle" href="/">David Healy</a>
+    <a class="navbar-brand text-white" id="navTitle" href="/">David Healy</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-            <%= link_to "Home", home_pages_path, class:"nav-link text-light" %>
+            <%= link_to "Home", home_pages_path, class:"nav-link text-white" %>
         </li>
 
         <li class="nav-item">
-            <%= link_to "Portfolio", projects_path, class:"nav-link text-light" %>
+            <%= link_to "Portfolio", projects_path, class:"nav-link text-white" %>
         </li>
 
         <li class="nav-item">
-            <%= link_to "Video Chat", video_chats_path, class:"nav-link text-light" %>
+            <%= link_to "Video Chat", video_chats_path, class:"nav-link text-white" %>
         </li>
       </ul>
       <div>
@@ -25,19 +25,19 @@
       <li class="d-flex align-self-center">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <%= link_to "Sign Out", destroy_user_session_path, 'data-turbo-method': :get, class:"nav-link text-light" %>
+            <%= link_to "Sign Out", destroy_user_session_path, 'data-turbo-method': :get, class:"nav-link text-white" %>
           </li>
           <li class="nav-item">
-              <%= link_to "Admin", rails_admin_path, class:"nav-link text-light" if current_user.admin? %>
+              <%= link_to "Admin", rails_admin_path, class:"nav-link text-white" if current_user.admin? %>
           </li>
         </ul>
       <% else %>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <%= link_to "Sign Up", new_user_registration_path, class:"nav-link text-light" %>
+            <%= link_to "Sign Up", new_user_registration_path, class:"nav-link text-white" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Log In", new_user_session_path, class:"nav-link text-light" %>
+            <%= link_to "Log In", new_user_session_path, class:"nav-link text-white" %>
           </li>
         </ul>
       <% end %>

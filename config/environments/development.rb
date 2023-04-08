@@ -34,7 +34,7 @@ Rails.application.configure do
   end
   
   # ngrok is a tool that allows you to expose a web server running on your local machine to the internet.
-  config.hosts << /[a-z0-9-]+\.ngrok\.io/
+  config.hosts << /.*\.ngrok\.io/
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local

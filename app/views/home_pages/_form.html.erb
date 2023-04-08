@@ -11,23 +11,23 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="m-2">
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title %>
   </div>
 
-  <div>
+  <div class="m-2">
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, style: "width: 375px; height: 400px;" %>
   </div>
 
-  <div>
+  <div class="m-2">
     <%= form.file_field :images, multiple:true %>
   </div>
 
   <br>
   
-  <div>
+  <div class="m-2">
     <%= form.submit %>
   </div>
 <% end %>
