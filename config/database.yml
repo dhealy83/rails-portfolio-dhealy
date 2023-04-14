@@ -11,7 +11,7 @@
 #
 default: &default
   adapter: postgresql
-  encoding: utf8mb4
+  encoding: utf8
   host: localhost
   port: 5432
   pool: <%= ENV.fetch("Rails_MAX_THREADS") { 5 } %>
