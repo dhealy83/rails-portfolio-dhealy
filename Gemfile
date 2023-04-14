@@ -85,6 +85,6 @@ gem 'sass-rails', '~> 6.0'
 gem "jquery", "~> 0.0.1"
 gem "opentok", "~> 4.6"
 gem 'actiontext', '~> 7.0.4.3'
-gem 'webpacker', github: 'rails/webpacker'
+
 gem 'ruby-vips', '~> 2.1', '>= 2.1.4'
 gem "importmap-rails", "~> 1.1"
