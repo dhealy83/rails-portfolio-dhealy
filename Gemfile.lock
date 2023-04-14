@@ -168,7 +168,6 @@ GEM
     minitest (5.18.0)
     msgpack (1.6.1)
     multi_xml (0.6.0)
-    mysql2 (0.5.5)
     nested_form (0.3.2)
     net-imap (0.3.4)
       date
@@ -188,6 +187,7 @@ GEM
       httparty (>= 0.18.0)
       jwt (>= 1.5.6)
     orm_adapter (0.5.0)
+    pg (1.4.6)
     public_suffix (5.0.1)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -307,8 +307,8 @@ DEPENDENCIES
   jquery (~> 0.0.1)
   jquery-rails
   jsbundling-rails
-  mysql2 (~> 0.5)
   opentok (~> 4.6)
+  pg (~> 1.4.6)
   puma (~> 5.0)
   rails (~> 7.0, >= 7.0.4.3)
   rails_admin (~> 3.0)

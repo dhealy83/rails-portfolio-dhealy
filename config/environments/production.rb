@@ -13,6 +13,12 @@ Rails.application.configure do
   # assumed the be a Heroku review app. Note that 'hashrocket' is used defensively
   # so the app will blow up at boot-time if both 'DEFAULT_HOST' and 'HEROKU_APP_NAME'
   # are not defined.
+  host = ENV["DEFAULT_URL_HOST"] || "#{ENV['HEROKU_APP_NAME']}.herokuapp.com"
+
+  config.action_controller.default_url_options = {
+    host: host,
+    protocol: "https"
+  }
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
@@ -33,7 +39,7 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
 
   # Compress CSS using a preprocessor.
-  # config.assets.css_compressor = :sass
+  config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
