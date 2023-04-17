@@ -14,5 +14,7 @@
 </div>
 
 <div class="mx-2" as="style">
-<%= link_to "New video chat", new_video_chat_path %>
+<% if user_signed_in? %>
+  <%= link_to "New video chat", new_video_chat_path if current_user.admin? %>
+<% end %>
 </div>

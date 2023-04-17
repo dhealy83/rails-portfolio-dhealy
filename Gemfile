@@ -10,10 +10,10 @@ gem 'rails', '~> 7.0', '>= 7.0.4.3'
 gem "sprockets-rails"
 
 # Use mysql as the database for Active Record
-gem "pg", "~> 1.4.6"
+gem 'pg', '~> 1.4', '>= 1.4.6'
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
+gem "puma", "~> 6.2.1"
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
@@ -88,3 +88,4 @@ gem 'actiontext', '~> 7.0.4.3'
 
 gem 'ruby-vips', '~> 2.1', '>= 2.1.4'
 gem "importmap-rails", "~> 1.1"
+gem 'yarn', '~> 0.1.1'
