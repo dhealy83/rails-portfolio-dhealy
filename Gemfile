@@ -90,7 +90,4 @@ gem 'actiontext', '~> 7.0.4.3'
 gem "importmap-rails", "~> 1.1"
 gem 'yarn', '~> 0.1.1'
 
-
-
-
-gem "ruby-vips", "~> 2.1"
+gem 'mini_magick', '~> 4.12'

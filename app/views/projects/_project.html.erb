@@ -1,12 +1,6 @@
 <div id="<%= dom_id project %>" class="text-white">
 
 <%= stylesheet_link_tag "projects", "data-turbo-track": "reload" %>
-  
-  <div class="m-2">
-    <% if user_signed_in? %>
-      <%= link_to "New project", new_project_path if current_user.admin?%>
-    <% end %>
-  </div>
 
   <div class="container">
     <div class="row my-5">

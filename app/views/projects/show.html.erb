@@ -11,6 +11,6 @@
       <%= link_to "Edit this project", edit_project_path(@project) if current_user.admin? %> |
       <%= link_to "Back to projects", projects_path if current_user.admin? %>
 
-      <%= button_to "Destroy this project", @project, method: :deleteif if current_user.admin? %>
+      <%= button_to "Destroy this project", @project, method: :delete if current_user.admin? %>
     </div>
   <% end %>
