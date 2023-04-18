@@ -23,6 +23,6 @@ module DhealyPortfolio
     # This is to add fonts to the asset pipeline
     config.assets.enabled = true
     config.assets.paths << Rails.root.join('/app/assets/fonts/')
-    
+    config.assets.debug = false
   end
 end
