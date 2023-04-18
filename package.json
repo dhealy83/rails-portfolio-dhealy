@@ -2,16 +2,22 @@
     "name": "app",
     "private": true,
     "dependencies": {
-      "webpack": "^5.53.0",
-      "webpack-cli": "^4.10.0"
+        "@hotwired/stimulus": "^3.2.1",
+        "@hotwired/turbo-rails": "^7.3.0",
+        "webpack": "^5.53.0",
+        "webpack-cli": "^4.10.0"
     },
     "version": "0.1.0",
-  
     "browserslist": [
-      "defaults"
+        "defaults"
     ],
     "devDependencies": {
-      "@webpack-cli/serve": "^2.0.1",
-      "webpack-dev-server": "^4.13.2"
-    }
-  }
+        "@webpack-cli/serve": "^2.0.1",
+        "webpack-dev-server": "^4.13.2"
+    },
+    "scripts": {
+        "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
+        "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets"
+    },
+    "packageManager": "yarn@3.5.0"
+}
