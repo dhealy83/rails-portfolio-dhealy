@@ -1,5 +1,5 @@
 web: bin/rails server -p 3000
-js: yarn build 
-css: yarn build:css 
+js: yarn build --force
+css: yarn build:css --force
 css: yarn build:css --watch
 js: yarn build --watch
