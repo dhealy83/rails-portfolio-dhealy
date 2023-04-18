@@ -90,4 +90,3 @@ gem 'actiontext', '~> 7.0.4.3'
 gem "importmap-rails", "~> 1.1"
 gem 'mini_magick', '~> 4.12'
 
-gem 'optimist', '~> 3.0', '>= 3.0.1'
