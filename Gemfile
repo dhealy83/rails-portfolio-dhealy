@@ -78,16 +78,8 @@ group :test do
 end
 
 gem "devise"
-
 gem "rails_admin", "~> 3.0"
 gem 'sass-rails', '~> 6.0'
-
-gem "jquery", "~> 0.0.1"
 gem "opentok", "~> 4.6"
-gem 'actiontext', '~> 7.0.4.3'
-
-
 gem "importmap-rails", "~> 1.1"
-gem 'mini_magick', '~> 4.12'
 
-gem 'trix-rails', require: 'trix'
