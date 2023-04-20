@@ -1,4 +1,4 @@
-web: bin/rails server -p 3001
+web: bin/rails server 
 js: yarn build --force
 css: yarn build:css --force
 css: yarn build:css --watch
