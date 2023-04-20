@@ -81,4 +81,4 @@ gem "devise"
 gem "rails_admin", "~> 3.0"
 gem 'sass-rails', '~> 6.0'
 gem "importmap-rails", "~> 1.1"
-gem "webpacker"
+
