@@ -15,3 +15,4 @@ Rails.application.config.assets.paths << Rails.root.join("node_modules/bootstrap
 # Add node_modules folder to the asset load path.
 Rails.application.config.assets.paths << Rails.root.join("node_modules")
 Rails.application.config.assets.paths << Rails.root.join("node_modules/bootstrap-icons/font")
+Rails.application.config.assets.paths << Rails.root.join("node_modules/@fortawesome/fontawesome-free/webfonts")
