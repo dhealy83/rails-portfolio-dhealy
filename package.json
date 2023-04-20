@@ -6,11 +6,11 @@
         "@hotwired/turbo-rails": "^7.3.0",
         "@popperjs/core": "^2.11.7",
         "@rails/actiontext": "^7.0.4-3",
+        "@yarnpkg/core": "^4.0.0-rc.42",
         "bootstrap": "^5.2.3",
         "bootstrap-icons": "^1.10.4",
         "esbuild": "^0.17.17",
         "sass": "^1.62.0",
-        "tinymce": "^6.4.1",
         "trix": "^2.0.4",
         "webpack": "^5.53.0",
         "webpack-cli": "^5.0.1"
@@ -21,6 +21,7 @@
     ],
     "devDependencies": {
         "@webpack-cli/serve": "^2.0.1",
+        "esbuild-loader": "^3.0.1",
         "webpack-dev-server": "^4.13.2"
     },
     "scripts": {

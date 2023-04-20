@@ -110,9 +110,6 @@ GEM
     ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    httparty (0.21.0)
-      mini_mime (>= 1.0.0)
-      multi_xml (>= 0.5.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.2)
@@ -133,7 +130,6 @@ GEM
       thor (>= 0.14, < 2.0)
     jsbundling-rails (1.1.1)
       railties (>= 6.0.0)
-    jwt (2.7.0)
     kaminari (1.2.2)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.2.2)
@@ -161,7 +157,6 @@ GEM
     mini_mime (1.1.2)
     minitest (5.18.0)
     msgpack (1.7.0)
-    multi_xml (0.6.0)
     nested_form (0.3.2)
     net-imap (0.3.4)
       date
@@ -175,11 +170,6 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.14.3-x86_64-linux)
       racc (~> 1.4)
-    opentok (4.6.0)
-      activesupport (>= 2.0)
-      addressable (~> 2.3)
-      httparty (>= 0.18.0)
-      jwt (>= 1.5.6)
     orm_adapter (0.5.0)
     pg (1.4.6)
     public_suffix (5.0.1)
@@ -258,6 +248,8 @@ GEM
     thor (1.2.1)
     tilt (2.1.0)
     timeout (0.3.2)
+    trix (0.10.1)
+      rails
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
@@ -298,7 +290,6 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   jsbundling-rails
-  opentok (~> 4.6)
   pg (~> 1.4, >= 1.4.6)
   puma (~> 6.2.1)
   rails (~> 7.0, >= 7.0.4.3)
@@ -308,13 +299,14 @@ DEPENDENCIES
   selenium-webdriver
   sprockets-rails
   stimulus-rails
+  trix
   turbo-rails
   tzinfo-data
   web-console
   webdrivers
 
 RUBY VERSION
-   ruby 3.2.0p0
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.4.12
