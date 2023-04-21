@@ -1,1 +1,0 @@
-/home/dhealy83/.rvm/rubies/ruby-3.2.2/bin/ruby
